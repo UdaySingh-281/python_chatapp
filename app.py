@@ -11,11 +11,6 @@ cursor = db.cursor()
 
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
